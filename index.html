@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Stop Watch</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+</head>
+<body class="bg-[url('/image/download.png')] mt-[20%] ">
+    <div class="container bg-white drop-shadow-2xl w-[30%] h-[150px] m-auto flex flex-col justify-evenly p-[10px] rounded-xl max-[899px]:w-[50%]">
+        <h1 class="text-[2rem] text-center ">00:00:00</h1>
+        <div class="setting flex justify-evenly m-auto w-[70%] h-auto ">
+            <button class="btnPlay bg-[url('/image/play-button.png')] bg-no-repeat bg-cover w-[20px] h-[20px]"></button>
+            <button class="btnPause bg-[url('/image/pause.png')] bg-no-repeat bg-cover w-[20px] h-[20px]"></button>
+            <button class="btnReplay bg-[url('/image/replay.png')] bg-no-repeat bg-cover w-[20px] h-[20px]"></button>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
